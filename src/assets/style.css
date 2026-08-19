@@ -1,3 +1,35 @@
+:root {
+    --bg: #080808;
+    --bg-elevated: #0f0f0f;
+    --fg: #f8f6f2;
+    --muted: #8a8680;
+    --accent: #c4a35a;
+    --accent-light: #d4b76a;
+    --card: #121210;
+    --border: #252320;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    background: var(--bg);
+    color: var(--fg);
+    overflow-x: hidden;
+}
+
+.font-display {
+    font-family: 'Cormorant Garamond', serif;
+}
+
 /* Grain overlay */
 .grain-overlay {
     position: fixed;
@@ -18,7 +50,7 @@
             rgba(8,8,8,0.3) 0%,
             rgba(8,8,8,0.6) 40%,
             rgba(8,8,8,0.95) 100%),
-            url("https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&q=80") center/cover no-repeat fixed;
+            url('https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=1920&q=80') center/cover no-repeat fixed;
 }
 
 /* Animations */
@@ -87,7 +119,7 @@
 }
 
 .btn-primary::before {
-    content: "";
+    content: '';
     position: absolute;
     top: 0;
     left: 0;
@@ -223,7 +255,6 @@ section[id] {
 
 /* --- EFFET "EN MISSION" POUR LES CARTES DE L'ÉQUIPE --- */
 
-/* Appliqué à l'image elle-même */
 .team-card img.mission-blur {
     filter: grayscale(100%) blur(5px);
     transition: filter 0.5s ease;
