@@ -12,6 +12,7 @@ export default function CharSheetModal({ member, onClose, onToggleMission }) {
     <div
       class="fixed inset-0 z-70 bg-(--bg) bg-opacity-95 flex items-center justify-center p-6"
       id="charModal"
+      onClick={onClose}
     >
       <div class="w-full max-w-2xl bg-(--bg-elevated) border border-(--border) p-8 max-h-[90vh] overflow-y-auto relative">
         <button
@@ -90,9 +91,13 @@ export default function CharSheetModal({ member, onClose, onToggleMission }) {
 
           {/* Bouton de mission */}
           <button
+            type="button"
             id="modal-mission-btn"
             class="btn-primary w-full mt-4"
-            onClick={() => onToggleMission(member.id)}
+            onClick={(e) => {
+              e.stopPropagation();
+              onToggleMission(member.id)
+            }}
           >
             {switchTextInButton(member.status)}
           </button>

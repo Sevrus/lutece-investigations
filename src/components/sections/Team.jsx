@@ -27,7 +27,6 @@ export default function Team() {
           : m
       )
     );
-    closeCharSheet();
   };
 
   return (
