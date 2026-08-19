@@ -1,0 +1,212 @@
+[
+  {
+    "id": "marc",
+    "nom": "Marc de Villiers",
+    "role": "Directeur / Ancien Commissaire",
+    "description": "Fort de trente années passées au sein de la prestigieuse Brigade Financière de la Police Judiciaire, Marc Delcourt a fait de la traque des flux illicites son art et sa discipline. Commissaire divisionnaire, il a mené durant toute sa carrière des enquêtes d’envergure nationale et internationale – corruption, blanchiment d’argent, fraude fiscale organisée, détournements de fonds publics – avec une exigence de rigueur qui lui a valu la confiance des plus hautes instances judiciaires.\n\nEn 2012, fort de ce parcours sans faille, il fonde Lutèce Investigations avec une ambition claire : mettre l’excellence de la méthode judiciaire au service du secteur privé et des particuliers confrontés à des situations patrimoniales ou réputationnelles complexes. Son credo : traiter chaque dossier avec la même intensité qu’une instruction criminelle, sans jamais transiger sur la déontologie.\n\nAujourd’hui encore, Marc supervise personnellement l’intégralité des affaires sensibles confiées à l’agence. Son regard clinique, sa mémoire des précédents et sa connaissance intime des arcanes bancaires et fiscaux font de lui le garant ultime de la qualité du travail de Lutèce Investigations. Il est assisté d’une équipe d’enquêteurs triés sur le volet, mais c’est toujours lui qui valide la stratégie, oriente les vérifications et, quand l’heure est venue, restitue la vérité à ses clients.",
+    "image": "images/marc_de_villiers.webp",
+    "specialites": [
+      "Fraudes financières",
+      "Affaires sensibles"
+    ],
+    "status": "Disponible",
+    "operational": false,
+    "forces": [
+      "Pédagogie",
+      "Réseau"
+    ],
+    "faiblesses": [
+      "Trop confiant",
+      "Rigidité"
+    ],
+    "secret": "Il possède toujours ses anciens codes d'accès au fichier des personnes recherchées.",
+    "background": "Trente ans à la Brigade Financière... (ton texte existant)",
+    "lgColSpan": 2,
+    "lgRowSpan": 2
+  },
+  {
+    "id": "alicia",
+    "nom": "Alicia Brazier",
+    "role": "Comptable Juridique",
+    "description": "Expert-comptable et juriste, elle analyse les flux financiers et prépare les dossiers pour les procédures judiciaires.",
+    "image": "images/alicia_brazier.webp",
+    "specialites": [
+      "Analyse financière",
+      "Droit des affaires"
+    ],
+    "status": "Disponible",
+    "operational": false,
+    "forces": [
+      "Précision",
+      "Discrétion"
+    ],
+    "faiblesses": [
+      "Manque d'expérience terrain"
+    ],
+    "secret": "Elle conserve une copie de tous les rapports financiers sensibles qu'elle a traités.",
+    "background": "Diplômée d'HEC..."
+  },
+  {
+    "id": "gisele",
+    "nom": "Gisèle Courtet",
+    "role": "Secrétaire Juridique",
+    "description": "Votre premier contact avec l'agence. Discrétion et professionnalisme pour organiser vos rendez-vous en toute confidentialité.",
+    "image": "images/gisele_courtet.webp",
+    "specialites": [
+      "Gestion confidentielle",
+      "Relation client"
+    ],
+    "status": "Disponible",
+    "operational": false,
+    "forces": [
+      "Discrétion absolue",
+      "Organisation"
+    ],
+    "faiblesses": [
+      "Trop bavarde en privé"
+    ],
+    "secret": "Elle tient un agenda parallèle des affaires sensibles que même Marc ignore.",
+    "background": "Ancienne assistante de direction..."
+  },
+  {
+    "id": "clement",
+    "nom": "Clément Beriziky",
+    "role": "Consultant en sécurité",
+    "description": "Ancien des forces spéciales. Protection des personnes et des biens, discrétion absolue.",
+    "image": "images/clement_beriziky.webp",
+    "specialites": [
+      "Filature",
+      "Surveillance"
+    ],
+    "status": "Disponible",
+    "operational": true,
+    "forces": [
+      "Physique",
+      "Observation"
+    ],
+    "faiblesses": [
+      "Technologie"
+    ],
+    "secret": "Lorsqu'il touche un élément informatique, celui-ci se met à dysfonctionner.",
+    "apparence": "Clément est un homme athlétique, taillé pour l’effort. Il mesure 1m85, cheveux bruns courts, regard bleu acier. Il porte souvent des vêtements pratiques, même en ville, et a conservé le port altier de ceux qui ont passé des années en montagne. Sa main droite est marquée par une cicatrice (souvenir d’Afghanistan). Il a un sourire facile mais ses yeux s’assombrissent quand il parle de ses anciennes missions.",
+    "background": "Né à Moutiers en Savoie, Clément a grandi dans l’ombre des montagnes. Son père étant militaire, il a naturellement choisi cette voie. Après ses classes, il a intégré le 27e BCA à Annecy, se spécialisant dans la manipulation d’explosifs. Il a gravi les échelons jusqu’à devenir chef d’équipe de haute montagne. Ses opérations extérieures (Côte d’Ivoire, Afghanistan, Centrafrique) lui ont forgé un sang-froid à toute épreuve. \n\nAprès 14 ans de service, il a choisi de ne pas renouveler son engagement. La vie militaire lui pesait, et il aspirait à des missions où il pourrait protéger des vies sans en prendre. La reconversion comme détective privé lui est venue naturellement. Il a rejoint Lutèce Investigations en 2017, apportant son expertise du terrain et sa capacité à garder son calme sous pression. \n\nDepuis mars 2018, il vit avec Alicia, la comptable de l’agence, dans un appartement parisien du 18e arrondissement. Il est éperdument amoureux, ce qui l’a un peu « ramolli » selon Morine, mais il reste redoutable quand il s’agit de protéger quelqu’un."
+  },
+  {
+    "id": "lu",
+    "nom": "Lu Meï",
+    "role": "Experte en investigation numérique",
+    "description": "Sécurité des données, analyse des systèmes d'information. La technologie au service de la vérité.",
+    "image": "images/sakura_tanaka.webp",
+    "specialites": [
+      "Cyber-sécurité",
+      "Analyse numérique"
+    ],
+    "status": "Disponible",
+    "operational": true,
+    "forces": [
+      "Hacking",
+      "Analyse"
+    ],
+    "faiblesses": [
+      "Physique",
+      "Intempérante"
+    ],
+    "apparence": "Lu Meï est une jeune femme de 29 ans, menue, le visage rond encadré par des cheveux noirs coupés au carré. Elle porte une frange droite qui lui tombe sur les yeux, qu'elle écarte machinalement quand elle se concentre. Ses yeux sont grands, très noirs, rarement en contact direct avec son interlocuteur. Elle sourit peu, mais quand elle le fait, c'est d'un seul côté, un sourire en coin qui trahit son amusement intérieur. Elle porte un sweat à capuche oversize, un jean noir, des baskets montantes usées. Ses seuls bijoux sont des écouteurs sans fil, toujours vissés aux oreilles, diffusant en permanence de la musique électronique à faible volume. Elle ne se déplace jamais sans son ordinateur portable, un modèle customisé couvert d'autocollants, glissé dans un sac à dos en toile.",
+    "background": "Née en 1995 à La Rochelle, Lu est la fille unique d'un père ingénieur en aéronautique et d'une mère professeur de Maths. Très tôt, elle montre des aptitudes exceptionnelles pour l'informatique. À 14 ans, elle pirate le serveur de son lycée pour modifier ses notes. À 16 ans, elle s'introduit dans le système informatique d'une grande banque Luxembourgeoise par simple défi, sans rien voler, laissant juste un message : « Votre sécurité est nulle. » \n\nRepérée par la Police Nationale lors d'une convention de hacking à Paris, elle est recrutée à 18 ans comme consultante en cybersécurité. Elle travaille pour la Police pendant quatre ans, déjouant des cyberattaques et traquant des réseaux de désinformation. \n\nEn 2017, Marc de Villiers la rencontre lors d'une conférence et lui propose de rejoindre Lutèce Investigation. Elle accepte immédiatement. Spécialiste des investigations numériques, elle peut faire parler un disque dur effacé, tracer un téléphone ou pirater une caméra de surveillance. Elle ne parle pas beaucoup, mais ses doigts, eux, ne s'arrêtent jamais.",
+    "secret": "Elle a gardé une backdoor dans le système d'une grande banque Française (BNP). elle se balade en Aston Martin DB9, ses collègues ne comprennent pas comment elle a acquis cette voiture."
+  },
+  {
+    "id": "jean-baptiste",
+    "nom": "Jean-Baptiste Delacroix",
+    "role": "Analyste et conseiller stratégique",
+    "description": "Vingt-trois ans d'expérience dans le renseignement d'État. Une capacité unique à trouver ce que d'autres ne voient pas. ",
+    "image": "images/jean-baptiste_delacroix.webp",
+    "specialites": [
+      "Recherche de personnes",
+      "Vérifications"
+    ],
+    "status": "Disponible",
+    "operational": true,
+    "forces": [
+      "Déduction",
+      "Patience"
+    ],
+    "faiblesses": [
+      "Rigidité",
+      "Insoumission"
+    ],
+    "apparence": "Jean-Baptiste Delacroix est un homme de 51 ans qui ne fait pas son âge. Grand, le dos toujours droit, il conserve une allure athlétique héritée de ses années de terrain. Ses cheveux, autrefois bruns, sont désormais entièrement gris, coupés très courts, presque militaires. Son visage est anguleux, marqué par le temps, avec des rides profondes autour des yeux et de la bouche. Ses yeux sont d'un bleu délavé, perçants, rarement en repos. Il s'habille simplement, sans recherche. Pantalon de toile sombre, veste sans âge, chemise unie. Il porte toujours une vieille montre de poignet, un modèle militaire qui a connu des jours meilleurs, et un bracelet en cuir tressé, offert par sa fille il y a longtemps.",
+    "background": "Né en 1973 à Rennes, dans une famille de militaires. Il intègre la DST (Direction de la Surveillance du Territoire) en 1993 et y passe vingt-trois ans, spécialisé dans le contre-espionnage et l'antiterrorisme. Il a opéré en Afrique, au Moyen-Orient et en Asie. Parle arabe et anglais. \n\nEn 2016, lassé des compromis politiques, il quitte la DGSI (Direction Générale de la Sécurité Intérieure) et rejoint Marc de Villiers chez Lutèce Investigation. Il est le spécialiste du renseignement de l'agence, celui qui pose les fondations de chaque enquête. Divorcé, père d'une fille unique qui vit à Montréal. Il ne parle jamais de sa vie privée. \n\nEn dehors de son travail à l'Agence Jean-Baptiste fréquente les soirées Parisiennes ou se détendent les personnalités Françaises, ce qui lui permet d'être au courrant de beaucoup de choses avant les autres.",
+    "secret": "Il s'est constitué au fil du temps une base de donnée personnelle sur le gratin parisien. Seul bémol, elle est sous forme de fiches... Il a une fâcheuse tendance a ne pas respécter les règles, probablement une habitude héritée de la DGSI."
+  },
+  {
+    "id": "odette",
+    "nom": "Odette Timmermans",
+    "role": "Psychologue et criminologue",
+    "description": "Comprendre les comportements pour anticiper les actes. Une approche rigoureuse au service de chaque dossier.",
+    "image": "images/odette_timmermans_cafe.webp",
+    "specialites": [
+      "Profilage",
+      "Vérifications"
+    ],
+    "status": "Disponible",
+    "operational": true,
+    "forces": [
+      "Profilage",
+      "Écoute"
+    ],
+    "faiblesses": [
+      "Trop sensible",
+      "Excentrique"
+    ],
+    "apparence": "Odette est une femme grande et ronde, aux cheveux blonds tirant sur le roux, souvent attachés en chignon lâche. Elle a un visage doux et des yeux marrons très expressifs. Elle s’habille de façon confortable mais élégante, avec des couleurs chaudes, elle n'hésite pas a varier les couleurs et a essayer de nouveaux mix ! Elle a toujours un carnet et un stylo sur elle et note tout ce qui pourrais lui servir.",
+    "background": "Odette est née à Schoten en 1990, en Flandre belge, dans une famille de psychiatres. Tout la destinait à suivre cette voie. Elle a fait des études de psychologie jusqu’au master, puis s’est spécialisée en psychologie clinique. Mais elle voulait aller plus loin, comprendre le crime dans sa globalité. Elle est partie à l’Université de Montréal pour un doctorat en criminologie. \n\nC’est au Québec qu’elle a rencontré Axel Moitessier, un architecte français. Le coup de foudre est alors réciproque. À la fin de ses études, elle l’a suivi à Paris, où elle a d’abord travaillé comme profiler pour la police judiciaire. En 2017, elle a rejoint Clément et Morine chez Lutèce Investigations, où elle peut enfin combiner psychologie clinique et criminologie. \n\nUne chose étrange chez elle, c'est son hyper-sensibilité. Un récit un peu triste, une situation heureuse suffit à lui faire couler une larme ou rigoler a pleine gorge. Afin de se protéger de ces excès son cerveau a développé parade, tout pour elle est 'mignon' et elle l'exprime ainsi. \n\nElle est profondément attachée à ses racines flamandes : elle écoute de la musique traditionnelle flamande en travaillant, cuisine des stoemp et des waterzoois pour ses collègues, et ne peut pas rester plus d’une semaine sans rentrer en Belgique voire sa famille.",
+    "secret": "Odette est l'analyste de Morine qui est cleptomane."
+  },
+  {
+    "id": "ren",
+    "nom": "Ren Ishida",
+    "role": "Enquêteur international",
+    "description": "Spécialiste du Japon et de l'Asie. Investigation de terrain, connaissance des réseaux locaux.",
+    "image": "images/ren_ishida_cafe.webp",
+    "specialites": [
+      "Recherches OSINT",
+      "Techniques d'interview"
+    ],
+    "status": "Disponible",
+    "operational": true,
+    "forces": [
+      "Adaptabilité",
+      "Langues"
+    ],
+    "faiblesses": [
+      "Impatient"
+    ],
+    "secret": "Il connaît les réseaux souterrains de Tokyo.",
+    "apparence": "Ren Ishida est un homme de 34 ans, de taille moyenne, mince, le visage fin et les pommettes saillantes. Ses cheveux noirs, légèrement trop longs, tombent en mèches désordonnées sur son front. Il les repousse machinalement quand il réfléchit. Ses yeux sombres sont vifs, mobiles, toujours en train de scanner la pièce.Il s'habille de manière fonctionnelle, sans souci d'élégance. Jean sombre, veste légère à poches multiples, chaussures de marche silencieuses. Il a toujours un appareil photo en bandoulière, un vieux reflex numérique usé par les années, et un carnet de notes glissé dans sa poche arrière. Il se fond dans la foule avec une aisance naturelle. Personne ne remarque Ren Ishida, et c'est exactement ce qu’il cherche.",
+    "background": "Né à Tokyo en 1990, Ren Ishida devient journaliste d'investigation à l'Asahi Shimbun. Ses enquêtes sur les liens entre crime organisé et monde politique lui valent le surnom de « La Fouine ». Poussé à la démission en 2015 après un article trop compromettant, il quitte le Japon pour Paris, où il travaille comme correspondant indépendant. \n\nIl rencontre Marc de Villiers lors d'une enquête croisée sur un trafic d'art entre l'Europe et l'Asie. Impressionné, Marc le recrute chez Lutèce Investigation en 2019. Spécialiste de la filature et de l'investigation de terrain, Ren connaît Tokyo comme sa poche. \n\nIl est toujours légalement marié à Nishida, une journaliste japonaise dont il est séparé mais avec qui il entretient une relation complexe, faite de silences et de regrets."
+  },
+  {
+    "id": "morine",
+    "nom": "Morine Satoko",
+    "role": "Juriste et coordinatrice",
+    "description": "Maîtrise des cadres juridiques français et internationaux. La précision comme méthode, l'efficacité comme résultat.",
+    "image": "images/morine_satoko_bureau.webp",
+    "specialites": [
+      "Conseil les enquêteurs",
+      "Loyauté de la preuve"
+    ],
+    "status": "Disponible",
+    "operational": true,
+    "forces": [
+      "Droit",
+      "Diplomatie"
+    ],
+    "faiblesses": [
+      "Trop formelle"
+    ],
+    "secret": "Morine est Cleptomane.",
+    "apparence": "Morine est une femme d’origine japonaise, de taille moyenne, aux cheveux noirs tirés en arrière. Elle est toujours impeccablement habillée, souvent en tailleur, et porte des lunettes fines. Son regard est perçant, presque intimidant. Elle ne dort jamais assez, ce qui se voit à ses légères cernes, mais cela ne semble jamais l’affecter.",
+    "background": "Née à Paris de parents japonais, Morine a grandi dans une famille où l’excellence était une obligation. Elle a enchaîné les études jusqu’au doctorat en droit, qu’elle a obtenu avec les félicitations du jury en 2014. Mais le monde académique et les cabinets d’avocats ne lui convenaient pas. Elle avait besoin d’action, de résultats concrets. \n\nC’est en 2017 qu’elle a rencontré Clément et Odette, avec qui elle a rejoint Lutèce Investigations. Elle s’est imposée comme la cheville ouvrière de l’agence, gérant les aspects juridiques, les relations avec les autorités, et la stratégie générale. Elle est convaincue (et le dit à qui veut l’entendre) que l’agence s’effondrerait sans elle. \n\nSon éthique de travail est légendaire : elle dort quatre heures par nuit, arrive souvent au bureau à 5h du matin, et dors souvent dans la salle de pause de l'agence lors des nuits trop chargées."
+  }
+]
