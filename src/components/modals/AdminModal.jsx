@@ -1,12 +1,18 @@
 import { useState } from "preact/hooks";
-import { useLocalStorage } from "../../hooks/useLocalStorage";
-import { CODE_ACCES, STORAGE_KEY, defaultDocs } from "../../utils/constants";
+import { CODE_ACCES } from "../../utils/constants";
 
 export default function AdminModal({ isOpen, onClose }) {
-  const [docs] = useLocalStorage(STORAGE_KEY, defaultDocs);
   const [loggedIn, setLoggedIn] = useState(false);
   const [pass, setPass] = useState("");
   const [error, setError] = useState(false);
+
+  const pdfFiles = [
+    {
+      id: 1,
+      title: "Rapport d'Investigation #042",
+      url: "https://res.cloudinary.com/tgvh6w6c/image/upload/FR_2026_PLF_VA_PGM_109.pdf"
+    }
+  ];
 
   if (!isOpen) {
     return (
@@ -38,10 +44,14 @@ export default function AdminModal({ isOpen, onClose }) {
     <div
       class="fixed inset-0 z-60 bg-(--bg) bg-opacity-95 flex items-center justify-center p-6"
       id="adminModal"
+      onClick={handleClose}
     >
-      <div class="w-full max-w-4xl bg-(--bg-elevated) border border-(--border) p-8 max-h-[80vh] overflow-y-auto relative">
+      <div
+        class="w-full max-w-4xl bg-(--bg-elevated) border border-(--border) p-8 max-h-[80vh] overflow-y-auto relative"
+        onClick={(e) => e.stopPropagation()}
+      >
         <button
-          class="absolute top-4 right-4 text-(--muted) hover:text-(--fg)"
+          class="absolute top-4 right-4 text-(--muted) hover:text-(--fg) z-10"
           id="closeAdmin"
           onClick={handleClose}
         >
@@ -72,7 +82,7 @@ export default function AdminModal({ isOpen, onClose }) {
             )}
           </div>
         ) : (
-          <div id="messagesView">
+          <div id="messagesView" class="pt-8">
             <div class="flex justify-between items-center mb-6 border-b border-(--border) pb-4">
               <h3 class="font-display text-3xl">
                 Espace Consultants — Dossiers & Rapports
@@ -86,27 +96,40 @@ export default function AdminModal({ isOpen, onClose }) {
               </button>
             </div>
 
-            <div class="space-y-4" id="messagesList">
-              {docs.length === 0 ? (
+            {/* Affichage des PDF */}
+            <div class="space-y-8" id="pdfList">
+              {pdfFiles.length === 0 ? (
                 <p class="text-(--muted) text-center py-10">
-                  Aucun dossier enregistré pour le moment.
+                  Aucun document enregistré pour le moment.
                 </p>
               ) : (
-                docs.map((doc) => (
+                pdfFiles.map((pdf) => (
                   <div
-                    key={doc.id}
-                    class="border border-(--border) p-4"
+                    key={pdf.id}
+                    class="border border-(--border) p-4 bg-(--bg) flex flex-col gap-3"
                   >
-                    <div class="flex justify-between items-start gap-4">
-                      <h4 class="font-display text-lg">{doc.title}</h4>
-                      <span class="text-[10px] uppercase tracking-widest text-(--accent) whitespace-nowrap">
-                        {doc.type}
-                      </span>
+                    <div class="flex justify-between items-center">
+                      <h4 class="font-display text-xl text-(--accent)">{pdf.title}</h4>
+                      <a
+                        href={pdf.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="text-xs text-(--muted) hover:text-(--fg) underline"
+                      >
+                        Ouvrir en plein écran ↗
+                      </a>
                     </div>
-                    <p class="text-xs text-(--muted) mt-1">{doc.date}</p>
-                    <p class="text-sm text-(--muted) mt-2 leading-relaxed">
-                      {doc.description}
-                    </p>
+
+                    {/* Le lecteur PDF intégré */}
+                    <div class="w-full h-[60vh] border border-(--border) bg-neutral-900 rounded-sm overflow-hidden">
+                      <iframe
+                        src={`${pdf.url}#toolbar=0&navpanes=0&scrollbar=0`}
+                        class="w-full h-full"
+                        title={pdf.title}
+                      >
+                        Votre navigateur ne supporte pas la lecture de PDF.
+                      </iframe>
+                    </div>
                   </div>
                 ))
               )}

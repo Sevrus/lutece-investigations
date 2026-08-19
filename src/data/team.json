@@ -85,9 +85,10 @@
       "Observation"
     ],
     "faiblesses": [
-      "Technologie"
+      "Technologie",
+      "A un TSPT"
     ],
-    "secret": "Lorsqu'il touche un élément informatique, celui-ci se met à dysfonctionner.",
+    "secret": "Lorsqu'il touche un élément électronique, celui-ci se met à dysfonctionner.",
     "apparence": "Clément est un homme athlétique, taillé pour l’effort. Il mesure 1m85, cheveux bruns courts, regard bleu acier. Il porte souvent des vêtements pratiques, même en ville, et a conservé le port altier de ceux qui ont passé des années en montagne. Sa main droite est marquée par une cicatrice (souvenir d’Afghanistan). Il a un sourire facile mais ses yeux s’assombrissent quand il parle de ses anciennes missions.",
     "background": "Né à Moutiers en Savoie, Clément a grandi dans l’ombre des montagnes. Son père étant militaire, il a naturellement choisi cette voie. Après ses classes, il a intégré le 27e BCA à Annecy, se spécialisant dans la manipulation d’explosifs. Il a gravi les échelons jusqu’à devenir chef d’équipe de haute montagne. Ses opérations extérieures (Côte d’Ivoire, Afghanistan, Centrafrique) lui ont forgé un sang-froid à toute épreuve. \n\nAprès 14 ans de service, il a choisi de ne pas renouveler son engagement. La vie militaire lui pesait, et il aspirait à des missions où il pourrait protéger des vies sans en prendre. La reconversion comme détective privé lui est venue naturellement. Il a rejoint Lutèce Investigations en 2017, apportant son expertise du terrain et sa capacité à garder son calme sous pression. \n\nDepuis mars 2018, il vit avec Alicia, la comptable de l’agence, dans un appartement parisien du 18e arrondissement. Il est éperdument amoureux, ce qui l’a un peu « ramolli » selon Morine, mais il reste redoutable quand il s’agit de protéger quelqu’un."
   },
@@ -161,7 +162,7 @@
     ],
     "apparence": "Odette est une femme grande et ronde, aux cheveux blonds tirant sur le roux, souvent attachés en chignon lâche. Elle a un visage doux et des yeux marrons très expressifs. Elle s’habille de façon confortable mais élégante, avec des couleurs chaudes, elle n'hésite pas a varier les couleurs et a essayer de nouveaux mix ! Elle a toujours un carnet et un stylo sur elle et note tout ce qui pourrais lui servir.",
     "background": "Odette est née à Schoten en 1990, en Flandre belge, dans une famille de psychiatres. Tout la destinait à suivre cette voie. Elle a fait des études de psychologie jusqu’au master, puis s’est spécialisée en psychologie clinique. Mais elle voulait aller plus loin, comprendre le crime dans sa globalité. Elle est partie à l’Université de Montréal pour un doctorat en criminologie. \n\nC’est au Québec qu’elle a rencontré Axel Moitessier, un architecte français. Le coup de foudre est alors réciproque. À la fin de ses études, elle l’a suivi à Paris, où elle a d’abord travaillé comme profiler pour la police judiciaire. En 2017, elle a rejoint Clément et Morine chez Lutèce Investigations, où elle peut enfin combiner psychologie clinique et criminologie. \n\nUne chose étrange chez elle, c'est son hyper-sensibilité. Un récit un peu triste, une situation heureuse suffit à lui faire couler une larme ou rigoler a pleine gorge. Afin de se protéger de ces excès son cerveau a développé parade, tout pour elle est 'mignon' et elle l'exprime ainsi. \n\nElle est profondément attachée à ses racines flamandes : elle écoute de la musique traditionnelle flamande en travaillant, cuisine des stoemp et des waterzoois pour ses collègues, et ne peut pas rester plus d’une semaine sans rentrer en Belgique voire sa famille.",
-    "secret": "Odette est l'analyste de Morine qui est cleptomane."
+    "secret": "Odette est l'analyste de Morine qui est cleptomane. Elle est persuadée d'être voyante."
   },
   {
     "id": "ren",
@@ -180,9 +181,10 @@
       "Langues"
     ],
     "faiblesses": [
-      "Impatient"
+      "Impatient",
+      "Antipathique"
     ],
-    "secret": "Il connaît les réseaux souterrains de Tokyo.",
+    "secret": "Il a infiltré le Sumiyoshi-kai pour une de ses enquêtes (il est tatoué en conséquences), puis s'est enfui en France prétextant un article compromettant.",
     "apparence": "Ren Ishida est un homme de 34 ans, de taille moyenne, mince, le visage fin et les pommettes saillantes. Ses cheveux noirs, légèrement trop longs, tombent en mèches désordonnées sur son front. Il les repousse machinalement quand il réfléchit. Ses yeux sombres sont vifs, mobiles, toujours en train de scanner la pièce.Il s'habille de manière fonctionnelle, sans souci d'élégance. Jean sombre, veste légère à poches multiples, chaussures de marche silencieuses. Il a toujours un appareil photo en bandoulière, un vieux reflex numérique usé par les années, et un carnet de notes glissé dans sa poche arrière. Il se fond dans la foule avec une aisance naturelle. Personne ne remarque Ren Ishida, et c'est exactement ce qu’il cherche.",
     "background": "Né à Tokyo en 1990, Ren Ishida devient journaliste d'investigation à l'Asahi Shimbun. Ses enquêtes sur les liens entre crime organisé et monde politique lui valent le surnom de « La Fouine ». Poussé à la démission en 2015 après un article trop compromettant, il quitte le Japon pour Paris, où il travaille comme correspondant indépendant. \n\nIl rencontre Marc de Villiers lors d'une enquête croisée sur un trafic d'art entre l'Europe et l'Asie. Impressionné, Marc le recrute chez Lutèce Investigation en 2019. Spécialiste de la filature et de l'investigation de terrain, Ren connaît Tokyo comme sa poche. \n\nIl est toujours légalement marié à Nishida, une journaliste japonaise dont il est séparé mais avec qui il entretient une relation complexe, faite de silences et de regrets."
   },
@@ -203,10 +205,11 @@
       "Diplomatie"
     ],
     "faiblesses": [
-      "Trop formelle"
+      "Trop formelle",
+      "Très coincée"
     ],
     "secret": "Morine est Cleptomane.",
     "apparence": "Morine est une femme d’origine japonaise, de taille moyenne, aux cheveux noirs tirés en arrière. Elle est toujours impeccablement habillée, souvent en tailleur, et porte des lunettes fines. Son regard est perçant, presque intimidant. Elle ne dort jamais assez, ce qui se voit à ses légères cernes, mais cela ne semble jamais l’affecter.",
-    "background": "Née à Paris de parents japonais, Morine a grandi dans une famille où l’excellence était une obligation. Elle a enchaîné les études jusqu’au doctorat en droit, qu’elle a obtenu avec les félicitations du jury en 2014. Mais le monde académique et les cabinets d’avocats ne lui convenaient pas. Elle avait besoin d’action, de résultats concrets. \n\nC’est en 2017 qu’elle a rencontré Clément et Odette, avec qui elle a rejoint Lutèce Investigations. Elle s’est imposée comme la cheville ouvrière de l’agence, gérant les aspects juridiques, les relations avec les autorités, et la stratégie générale. Elle est convaincue (et le dit à qui veut l’entendre) que l’agence s’effondrerait sans elle. \n\nSon éthique de travail est légendaire : elle dort quatre heures par nuit, arrive souvent au bureau à 5h du matin, et dors souvent dans la salle de pause de l'agence lors des nuits trop chargées."
+    "background": "Née à Paris de parents japonais en 1987, Morine a grandi dans une famille où l’excellence était une obligation. Elle a enchaîné les études jusqu’au doctorat en droit, qu’elle a obtenu avec les félicitations du jury en 2014. Mais le monde académique et les cabinets d’avocats ne lui convenaient pas. Elle avait besoin d’action, de résultats concrets. \n\nC’est en 2017 qu’elle a rencontré Clément et Odette, avec qui elle a rejoint Lutèce Investigations. Elle s’est imposée comme la cheville ouvrière de l’agence, gérant les aspects juridiques, les relations avec les autorités, et la stratégie générale. Elle est convaincue (et le dit à qui veut l’entendre) que l’agence s’effondrerait sans elle. \n\nSon éthique de travail est légendaire : elle dort quatre heures par nuit, arrive souvent au bureau à 5h du matin, et dors souvent dans la salle de pause de l'agence lors des nuits trop chargées."
   }
 ]
