@@ -5,6 +5,7 @@ import Footer from "./layout/Footer.jsx";
 import Hero from "./sections/Hero.jsx";
 import Team from "./sections/Team.jsx";
 import Services from "./sections/Services.jsx";
+import Contact from "./sections/Contact.jsx";
 
 export default function App() {
     const [adminOpen, setAdminOpen] = useState(false);
@@ -15,6 +16,7 @@ export default function App() {
         <Hero />
         <Team />
         <Services />
+        <Contact />
         <Footer onOpenAdmin={() => setAdminOpen(true)} />
     </>
   )
