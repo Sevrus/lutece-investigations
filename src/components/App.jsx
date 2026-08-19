@@ -6,6 +6,7 @@ import Hero from "./sections/Hero.jsx";
 import Team from "./sections/Team.jsx";
 import Services from "./sections/Services.jsx";
 import Contact from "./sections/Contact.jsx";
+import AdminModal from "./modals/AdminModal.jsx";
 
 export default function App() {
     const [adminOpen, setAdminOpen] = useState(false);
@@ -18,6 +19,7 @@ export default function App() {
         <Services />
         <Contact />
         <Footer onOpenAdmin={() => setAdminOpen(true)} />
+        <AdminModal isOpen={adminOpen} onClose={() => setAdminOpen(false)} />
     </>
   )
 }
