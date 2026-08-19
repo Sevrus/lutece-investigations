@@ -69,15 +69,16 @@ export default function Team() {
 function TeamCard({ member, onOpen }) {
   const ref = useScrollReveal();
 
-  // NOTE : ces classes dynamiques (lg:col-span-N, lg:row-span-N) doivent être
-  // "safelistées" dans tailwind.config.js si vous quittez le CDN Tailwind pour
-  // un build (PostCSS), sinon elles seront purgées en production.
-  const gridClasses = [
-    member.lgColSpan ? `lg:col-span-${member.lgColSpan}` : "",
-    member.lgRowSpan ? `lg:row-span-${member.lgRowSpan}` : "",
-  ]
-    .filter(Boolean)
-    .join(" ");
+  const gridClasses = member.id === 'marc'
+    ? 'lg:col-span-2 lg:row-span-2'
+    : '';
+
+  // const gridClasses = [
+  //   member.lgColSpan ? `lg:col-span-${member.lgColSpan}` : "",
+  //   member.lgRowSpan ? `lg:row-span-${member.lgRowSpan}` : "",
+  // ]
+  //   .filter(Boolean)
+  //   .join(" ");
 
   const blurClass = member.status === "En mission" ? "mission-blur" : "";
   const cursorClass = member.operational ? "cursor-pointer" : "cursor-default";
