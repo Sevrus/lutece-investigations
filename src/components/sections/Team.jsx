@@ -103,6 +103,12 @@ function TeamCard({ member, onOpen }) {
             {member.status}
           </div>
         )}
+          <div
+            id={`location-${member.id}`}
+            class={`absolute top-4 right-4 z-10 text-[9px] uppercase tracking-widest px-2 py-1 border bg-(--bg)`}
+          >
+            {member.location}
+          </div>
         <img
           id={`img-${member.id}`}
           src={`/${member.image}`}

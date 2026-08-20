@@ -11,6 +11,7 @@
     ],
     "status": "Disponible",
     "operational": false,
+    "location": "Paris",
     "forces": [
       "Pédagogie",
       "Réseau"
@@ -36,6 +37,7 @@
     ],
     "status": "Disponible",
     "operational": false,
+    "location": "Paris",
     "forces": [
       "Précision",
       "Discrétion"
@@ -58,6 +60,7 @@
     ],
     "status": "Disponible",
     "operational": false,
+    "location": "Paris",
     "forces": [
       "Discrétion absolue",
       "Organisation"
@@ -80,6 +83,7 @@
     ],
     "status": "Disponible",
     "operational": true,
+    "location": "Paris",
     "forces": [
       "Physique",
       "Observation"
@@ -104,6 +108,7 @@
     ],
     "status": "Disponible",
     "operational": true,
+    "location": "Paris",
     "forces": [
       "Hacking",
       "Analyse"
@@ -128,6 +133,7 @@
     ],
     "status": "Disponible",
     "operational": true,
+    "location": "Paris",
     "forces": [
       "Déduction",
       "Patience"
@@ -152,6 +158,7 @@
     ],
     "status": "Disponible",
     "operational": true,
+    "location": "Paris",
     "forces": [
       "Profilage",
       "Écoute"
@@ -176,6 +183,7 @@
     ],
     "status": "Disponible",
     "operational": true,
+    "location": "Paris",
     "forces": [
       "Adaptabilité",
       "Langues"
@@ -200,6 +208,7 @@
     ],
     "status": "Disponible",
     "operational": true,
+    "location": "Paris",
     "forces": [
       "Droit",
       "Diplomatie"
