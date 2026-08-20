@@ -220,5 +220,30 @@
     "secret": "Morine est Cleptomane.",
     "apparence": "Morine est une femme d’origine japonaise, de taille moyenne, aux cheveux noirs tirés en arrière. Elle est toujours impeccablement habillée, souvent en tailleur, et porte des lunettes fines. Son regard est perçant, presque intimidant. Elle ne dort jamais assez, ce qui se voit à ses légères cernes, mais cela ne semble jamais l’affecter.",
     "background": "Née à Paris de parents japonais en 1987, Morine a grandi dans une famille où l’excellence était une obligation. Elle a enchaîné les études jusqu’au doctorat en droit, qu’elle a obtenu avec les félicitations du jury en 2014. Mais le monde académique et les cabinets d’avocats ne lui convenaient pas. Elle avait besoin d’action, de résultats concrets. \n\nC’est en 2017 qu’elle a rencontré Clément et Odette, avec qui elle a rejoint Lutèce Investigations. Elle s’est imposée comme la cheville ouvrière de l’agence, gérant les aspects juridiques, les relations avec les autorités, et la stratégie générale. Elle est convaincue (et le dit à qui veut l’entendre) que l’agence s’effondrerait sans elle. \n\nSon éthique de travail est légendaire : elle dort quatre heures par nuit, arrive souvent au bureau à 5h du matin, et dors souvent dans la salle de pause de l'agence lors des nuits trop chargées."
+  },
+    {
+    "id": "ema",
+    "nom": "Ema Takahashi",
+    "role": "Responsable d'agence",
+    "description": "Vous cherchez une vérité qu’on vous cache ? Ema Takahashi a fait de sa propre histoire une arme pour éclairer vos zones d’ombre. ",
+    "image": "images/ema_takahashi_bureau.webp",
+    "specialites": [
+      "Sectes",
+      "Exit counseling"
+    ],
+    "status": "Disponible",
+    "operational": true,
+    "location": "Tokyo",
+    "forces": [
+      "Photographie",
+      "Investigation"
+    ],
+    "faiblesses": [
+      "Trop franche",
+      "Sanguine"
+    ],
+    "secret": "Ema a beaucoup de mal a garder son calme et à avoir les idées claires pour tout ce qui touche aux secte.",
+    "apparence": "Ema est une femme de petite taille (1m58), au corps mince et athlétique, hérité de ses années de pratique du kendo. Elle a les cheveux noirs coupés courts, souvent coiffés en un carré strict qui encadre un visage aux traits fins et aux pommettes saillantes. Ses yeux sombres sont perçants et observateurs, toujours en mouvement, comme si elle analysait constamment son environnement. \n\nElle s'habille avec une élégance discrète : tailleurs sobres, chemises blanches impeccables, chaussures confortables mais élégantes. En terrain dangereux, elle troque ses talons pour des baskets noires et endosse une veste en cuir qui lui donne un air plus rebelle. \n\nSon sourire est rare mais sincère. Quand elle le fait, des rides amusées apparaissent au coin de ses yeux, trahissant une chaleur qu'elle masque souvent derrière une façade professionnelle.",
+    "background": "Ema Takahashi est née à Tokyo en 1987, dans une famille de la classe moyenne. Son père, fonctionnaire au ministère de la Justice, était un homme rigide et distant. Sa mère, institutrice, était douce et aimante, mais impuissante face à l'autorité paternelle. \n\nSon frère aîné, Kenji, était son modèle. Brillant, idéaliste, il avait rejoint une université prestigieuse pour étudier la philosophie. C'est là qu'il fut recruté par une secte, La Voie de l'Aube Éternelle, une organisation pseudo-religieuse qui promettait l'illumination spirituelle. Kenji s'y investit corps et âme, négligeant ses études, s'éloignant de sa famille, perdant peu à peu toute identité propre. \n\nEma, alors étudiante en journalisme, tenta de le raisonner. Elle enquêta sur la secte, découvrit ses pratiques de lavage de cerveau, ses méthodes de contrôle mental, ses abus financiers. Elle confronta son frère avec ses preuves. Il refusa de l'écouter. Il lui dit qu'elle était jalouse de sa libération spirituelle, qu'elle ne comprenait rien. \n\nQuelques mois plus tard, Kenji se suicida en sautant du toit du bâtiment de la secte. Il avait laissé une lettre : 'Je me sacrifie pour la lumière éternelle. Mes frères et sœurs, ne pleurez pas. Je vais au-devant.' \n\nLa secte fut dissoute quelques années plus tard par la police, mais Ema n'oublia jamais. Elle quitta le journalisme pour devenir photographe animalier puis détective privée, jurant de protéger les autres de ce qui était arrivé à son frère. \n\nElle travailla d'abord pour une petite agence à Osaka, puis fut recrutée par Lutèce Investigation en 2020 pour diriger leur antenne à Tokyo. Depuis, elle est l'œil et l'oreille de l'agence au Japon, gérant les enquêtes locales et servant de guide aux enquêteurs parisiens."
   }
 ]
