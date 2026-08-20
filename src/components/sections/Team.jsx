@@ -1,4 +1,6 @@
-import { useState } from "preact/hooks";
+import {useEffect, useState} from "preact/hooks";
+import { ref, onValue, set } from "firebase/database";
+import { db } from "../../firebase";
 import AccentLine from "../common/AccentLine";
 import Reveal from "../common/Reveal";
 import CharSheetModal from "../modals/CharSheetModal";
@@ -11,6 +13,20 @@ export default function Team() {
 
   const selectedMember = members.find((m) => m.id === selectedId) || null;
 
+  useEffect(() => {
+    const teamRef = ref(db, 'teamStatus');
+    const unsubscribe = onValue(teamRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        setMembers((prev) =>
+          prev.map((m) => (data[m.id] ? { ...m, status: data[m.id] } : m))
+        );
+      }
+    });
+
+    return () => unsubscribe();
+  }, []);
+
   const openCharSheet = (id) => {
     const member = members.find((m) => m.id === id);
     if (!member || !member.operational) return;
@@ -19,14 +35,17 @@ export default function Team() {
 
   const closeCharSheet = () => setSelectedId(null);
 
-  const toggleMission = (id) => {
-    setMembers((prev) =>
-      prev.map((m) =>
-        m.id === id
-          ? { ...m, status: m.status === "Disponible" ? "En mission" : "Disponible" }
-          : m
-      )
-    );
+const toggleMission = async (id) => {
+    const member = members.find((m) => m.id === id);
+    if (!member) return;
+
+    const newStatus = member.status === "Disponible" ? "En mission" : "Disponible";
+
+    try {
+        await set(ref(db, `teamStatus/${id}`), newStatus);
+    } catch (error) {
+        console.error("Erreur lors de la mise à jour du statut :", error);
+    }
   };
 
   return (
@@ -71,13 +90,6 @@ function TeamCard({ member, onOpen }) {
   const gridClasses = member.id === 'marc'
     ? 'lg:col-span-2 lg:row-span-2'
     : '';
-
-  // const gridClasses = [
-  //   member.lgColSpan ? `lg:col-span-${member.lgColSpan}` : "",
-  //   member.lgRowSpan ? `lg:row-span-${member.lgRowSpan}` : "",
-  // ]
-  //   .filter(Boolean)
-  //   .join(" ");
 
   const blurClass = member.status === "En mission" ? "mission-blur" : "";
   const cursorClass = member.operational ? "cursor-pointer" : "cursor-default";

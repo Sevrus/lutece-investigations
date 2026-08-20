@@ -1,26 +1,43 @@
-import { useState } from "preact/hooks";
-import { CODE_ACCES } from "../../utils/constants";
+import {useEffect, useState} from "preact/hooks";
+import { ref, onValue, push, set, remove } from "firebase/database";
+import { db } from "../../firebase";
 
 export default function AdminModal({ isOpen, onClose }) {
   const [loggedIn, setLoggedIn] = useState(false);
   const [pass, setPass] = useState("");
   const [error, setError] = useState(false);
 
-  const pdfFiles = [
-    {
-      id: 1,
-      title: "Rapport d'Investigation #042",
-      url: "https://res.cloudinary.com/tgvh6w6c/image/upload/FR_2026_PLF_VA_PGM_109.pdf"
-    }
-  ];
+  const [pdfFiles, setPdfFiles] = useState([]);
+  const [newTitle, setNewTitle] = useState("");
+  const [newUrl, setNewUrl] = useState("");
+
+  useEffect(() => {
+    if (!loggedIn) return;
+
+    const docsRef = ref(db, 'consultantDocs');
+    const unsubscribe = onValue(docsRef, (snapshot) => {
+      const data = snapshot.val();
+      if (data) {
+        const loadedDocs = Object.entries(data).map(([key, val]) => ({
+          id: key,
+          ...val
+        }));
+        setPdfFiles(loadedDocs.reverse());
+      } else {
+        setPdfFiles([]);
+      }
+    });
+
+    return () => unsubscribe();
+  }, [loggedIn]);
 
   if (!isOpen) {
-    return (
-      <div class="fixed inset-0 z-60 hidden" id="adminModal"></div>
-    );
+    return <div class="fixed inset-0 z-60 hidden" id="adminModal"></div>;
   }
 
   const handleLogin = () => {
+    const CODE_ACCES = import.meta.env.VITE_CODE_ACCES_CONSULTANT;
+
     if (pass === CODE_ACCES) {
       setLoggedIn(true);
       setError(false);
@@ -38,6 +55,35 @@ export default function AdminModal({ isOpen, onClose }) {
   const handleClose = () => {
     handleLogout();
     onClose();
+  };
+
+  const handleAddDocument = async (e) => {
+    e.preventDefault();
+    if (!newTitle || !newUrl) return;
+
+    const newDocRef = push(ref(db, 'consultantDocs'));
+    try {
+     await set(newDocRef, {
+      title: newTitle,
+      url: newUrl,
+      date: new Date().toLocaleDateString('fr-FR')
+    });
+    } catch (error) {
+      console.error(error);
+    }
+
+    setNewTitle("");
+    setNewUrl("");
+  };
+
+  const handleDeleteDocument = async (id) => {
+    if (confirm("Voulez-vous vraiment supprimer ce document de l'espace consultant ?")) {
+      try {
+        await remove(ref(db, `consultantDocs/${id}`));
+      } catch (error) {
+        console.error("Erreur lors de la suppression du document.", error);
+      }
+    }
   };
 
   return (
@@ -96,6 +142,30 @@ export default function AdminModal({ isOpen, onClose }) {
               </button>
             </div>
 
+            {/* --- Formulaire d'ajout pour le MJ --- */}
+            <div class="mb-8 p-6 border border-(--border) bg-black/20">
+              <h4 class="text-xs uppercase tracking-wider text-(--accent) mb-4">Ajouter un document</h4>
+              <form onSubmit={handleAddDocument} class="flex gap-4">
+                <input
+                  type="text"
+                  placeholder="Titre du rapport"
+                  value={newTitle}
+                  onInput={(e) => setNewTitle(e.target.value)}
+                  class="flex-1 bg-transparent border border-(--border) px-3 py-2 text-sm text-(--fg) outline-none"
+                />
+                <input
+                  type="url"
+                  placeholder="URL du PDF (Cloudinary, Drive...)"
+                  value={newUrl}
+                  onInput={(e) => setNewUrl(e.target.value)}
+                  class="flex-1 bg-transparent border border-(--border) px-3 py-2 text-sm text-(--fg) outline-none"
+                />
+                <button type="submit" class="text-xs border border-(--accent) text-(--accent) px-4 hover:bg-(--accent) hover:text-(--bg) transition-colors">
+                  Publier
+                </button>
+              </form>
+            </div>
+
             {/* Affichage des PDF */}
             <div class="space-y-8" id="pdfList">
               {pdfFiles.length === 0 ? (
@@ -108,16 +178,27 @@ export default function AdminModal({ isOpen, onClose }) {
                     key={pdf.id}
                     class="border border-(--border) p-4 bg-(--bg) flex flex-col gap-3"
                   >
-                    <div class="flex justify-between items-center">
-                      <h4 class="font-display text-xl text-(--accent)">{pdf.title}</h4>
-                      <a
-                        href={pdf.url}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        class="text-xs text-(--muted) hover:text-(--fg) underline"
-                      >
-                        Ouvrir en plein écran ↗
-                      </a>
+                    {/* Bouton de suppression */}
+                    <button
+                      onClick={() => handleDeleteDocument(pdf.id)}
+                      class="absolute top-4 right-4 text-(--muted) hover:text-red-500 opacity-0 group-hover:opacity-100 transition-opacity"
+                    >
+                      Supprimer
+                    </button>
+
+                   <div class="flex flex-col pr-8">
+                      <span class="text-[10px] text-(--accent) uppercase mb-1">{pdf.date}</span>
+                      <div class="flex justify-between items-center">
+                        <h4 class="font-display text-xl text-(--fg)">{pdf.title}</h4>
+                        <a
+                          href={pdf.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          class="text-xs text-(--muted) hover:text-(--fg) underline"
+                        >
+                          Ouvrir ↗
+                        </a>
+                      </div>
                     </div>
 
                     {/* Le lecteur PDF intégré */}

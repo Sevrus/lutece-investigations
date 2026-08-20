@@ -35,14 +35,14 @@ export default function Header() {
             <a class="flex items-center gap-3 group" href="#">
               <img
                 alt="logo agence"
-                class="w-20 h-20 lg:w-20 lg:h-20 text-[var(--accent)] group-hover:text-[var(--bg)] transition-colors"
+                class="w-20 h-20 lg:w-20 lg:h-20 text-(--accent) group-hover:text-(--bg) transition-colors"
                 src="/images/logo_agence_petit.webp"
               />
               <div>
-                <span class="font-display text-lg lg:text-xl font-semibold tracking-wide text-[var(--fg)]">
+                <span class="font-display text-lg lg:text-xl font-semibold tracking-wide text-(--fg)">
                   Lutèce
                 </span>
-                <span class="block text-[10px] lg:text-xs tracking-[0.3em] text-[var(--muted)] uppercase">
+                <span class="block text-[10px] lg:text-xs tracking-[0.3em] text-(--muted) uppercase">
                   Investigations
                 </span>
               </div>
@@ -72,7 +72,7 @@ export default function Header() {
               onClick={toggleMenu}
             >
               <span
-                class="w-6 h-px bg-[var(--fg)] transition-all duration-300"
+                class="w-6 h-px bg-(--fg) transition-all duration-300"
                 style={
                   menuOpen
                     ? { transform: "rotate(45deg) translate(3px, 3px)" }
@@ -80,11 +80,11 @@ export default function Header() {
                 }
               ></span>
               <span
-                class="w-6 h-px bg-[var(--fg)] transition-all duration-300"
+                class="w-6 h-px bg-(--fg) transition-all duration-300"
                 style={{ opacity: menuOpen ? 0 : 1 }}
               ></span>
               <span
-                class="h-px bg-[var(--fg)] transition-all duration-300"
+                class="h-px bg-(--fg) transition-all duration-300"
                 style={
                   menuOpen
                     ? { transform: "rotate(-45deg) translate(2px, -2px)", width: "24px" }
@@ -98,7 +98,7 @@ export default function Header() {
 
       {/* Mobile Menu */}
       <div
-        class={`mobile-menu fixed inset-0 bg-[var(--bg)] z-40 flex flex-col items-center justify-center gap-8 ${
+        class={`mobile-menu fixed inset-0 bg-(--bg) z-40 flex flex-col items-center justify-center gap-8 ${
           menuOpen ? "open" : ""
         }`}
         id="mobileMenu"
@@ -106,7 +106,7 @@ export default function Header() {
         {NAV_LINKS.map((link) => (
           <a
             key={link.href}
-            class="font-display text-3xl text-[var(--fg)] hover:text-[var(--accent)] transition-colors mobile-link"
+            class="font-display text-3xl text-(--fg) hover:text-(--accent) transition-colors mobile-link"
             href={link.href}
             onClick={closeMenu}
           >
