@@ -245,5 +245,55 @@
     "secret": "Ema a beaucoup de mal a garder son calme et à avoir les idées claires pour tout ce qui touche aux secte.",
     "apparence": "Ema est une femme de petite taille (1m58), au corps mince et athlétique, hérité de ses années de pratique du kendo. Elle a les cheveux noirs coupés courts, souvent coiffés en un carré strict qui encadre un visage aux traits fins et aux pommettes saillantes. Ses yeux sombres sont perçants et observateurs, toujours en mouvement, comme si elle analysait constamment son environnement. \n\nElle s'habille avec une élégance discrète : tailleurs sobres, chemises blanches impeccables, chaussures confortables mais élégantes. En terrain dangereux, elle troque ses talons pour des baskets noires et endosse une veste en cuir qui lui donne un air plus rebelle. \n\nSon sourire est rare mais sincère. Quand elle le fait, des rides amusées apparaissent au coin de ses yeux, trahissant une chaleur qu'elle masque souvent derrière une façade professionnelle.",
     "background": "Ema Takahashi est née à Tokyo en 1987, dans une famille de la classe moyenne. Son père, fonctionnaire au ministère de la Justice, était un homme rigide et distant. Sa mère, institutrice, était douce et aimante, mais impuissante face à l'autorité paternelle. \n\nSon frère aîné, Kenji, était son modèle. Brillant, idéaliste, il avait rejoint une université prestigieuse pour étudier la philosophie. C'est là qu'il fut recruté par une secte, La Voie de l'Aube Éternelle, une organisation pseudo-religieuse qui promettait l'illumination spirituelle. Kenji s'y investit corps et âme, négligeant ses études, s'éloignant de sa famille, perdant peu à peu toute identité propre. \n\nEma, alors étudiante en journalisme, tenta de le raisonner. Elle enquêta sur la secte, découvrit ses pratiques de lavage de cerveau, ses méthodes de contrôle mental, ses abus financiers. Elle confronta son frère avec ses preuves. Il refusa de l'écouter. Il lui dit qu'elle était jalouse de sa libération spirituelle, qu'elle ne comprenait rien. \n\nQuelques mois plus tard, Kenji se suicida en sautant du toit du bâtiment de la secte. Il avait laissé une lettre : 'Je me sacrifie pour la lumière éternelle. Mes frères et sœurs, ne pleurez pas. Je vais au-devant.' \n\nLa secte fut dissoute quelques années plus tard par la police, mais Ema n'oublia jamais. Elle quitta le journalisme pour devenir photographe animalier puis détective privée, jurant de protéger les autres de ce qui était arrivé à son frère. \n\nElle travailla d'abord pour une petite agence à Osaka, puis fut recrutée par Lutèce Investigation en 2020 pour diriger leur antenne à Tokyo. Depuis, elle est l'œil et l'oreille de l'agence au Japon, gérant les enquêtes locales et servant de guide aux enquêteurs parisiens."
+  },
+  {
+  "id": "olivier",
+  "nom": "Olivier Tremblay",
+  "role": "Enquêteur terrain",
+  "description": "Ancien de la Sûreté du Québec, il excelle dans les enquêtes financières et les affaires familiales les plus sensibles.",
+  "image": "images/olivier_tremblay.webp",
+  "specialites": [
+    "Investigations de terrain",
+    "Interrogatoires"
+  ],
+  "status": "Disponible",
+  "operational": false,
+  "location": "Montréal",
+  "forces": [
+    "Sens du terrain",
+    "Mémoire des lieux"
+  ],
+  "faiblesses": [
+    "Trop impliqué émotionnellement",
+    "Fumeur invétéré"
+  ],
+  "secret": "Olivier a protégé un indicateur qui s'est avéré être un criminel notoire, ce qui a déclenché une enquête interne et une démission forcée de la SQ. Il garde ce secret pour lui, même auprès de ses collègues.",
+  "apparence": "Olivier Tremblay est un homme grand, costaud, la cinquantaine bien entamée, avec une carrure de joueur de hockey amateur. Il a les cheveux grisonnants, coupés court, une barbe de trois jours soigneusement entretenue, et des yeux bleus fatigués, entourés de fines rides de sourire. Il a le visage buriné par les hivers québécois et les nuits blanches.\n\nIl s'habille de façon décontractée, toujours en jean, blouson en cuir usé ou veste de laine, et porte des bottes de marche en toutes saisons. Il a une voix grave, un accent québécois prononcé qu'il n'a jamais cherché à atténuer, et un rire franc qui remplit une pièce. Il fume des cigarettes roulées, qu'il confectionne lui-même, et il a toujours un vieux Zippo dans la poche.",
+  "background": "Né en 1970 à Jonquière, au Saguenay, Olivier est le fils d'un contremaître dans une usine d'aluminium et d'une infirmière. Il a grandi dans une famille modeste, a fait du hockey sur glace et a rêvé de devenir policier dès l'âge de 12 ans. Il a intégré la SQ à 22 ans, après des études en criminologie à l'UQAM, et a passé la majeure partie de sa carrière à la division des enquêtes financières de Montréal.\n\nIl a traqué des fraudeurs immobiliers, des blanchisseurs d'argent liés aux motards, et des familles mafieuses italo-québécoises. Son plus grand succès a été le démantèlement d'un réseau de fraude fiscale qui touchait plusieurs entreprises de la région de Québec. Mais en 2019, une enquête sur un trafic de faux-monnayeurs a mal tourné : son indicateur principal était en réalité le cerveau du réseau. Il a été blâmé, a démissionné en 2020, et a sombré dans une dépression légère.\n\nC'est Jean-Baptiste Delacroix qui l'a sorti de son trou et l'a présenté à Marc de Villiers. Depuis, Olivier a retrouvé un sens à sa vie, même s'il reste marqué par cette affaire. Il est divorcé, père de deux filles adultes qui vivent à Vancouver, et il partage son temps entre Montréal et son chalet dans les Laurentides, où il aime pêcher et se ressourcer."
+  },
+  {
+  "id": "minjun",
+  "nom": "Min-jun Park",
+  "role": "Expert en investigation numérique",
+  "description": "Ancien analyste du renseignement sud-coréen, il traque les vérités cachées dans les données numériques avec une mémoire infaillible.",
+  "image": "images/min-jun_park.webp",
+  "specialites": [
+    "Cyber-surveillance",
+    "Analyse de données"
+  ],
+  "status": "Disponible",
+  "operational": false,
+  "location": "Séoul",
+  "forces": [
+    "Mémoire photographique",
+    "Multilingue"
+  ],
+  "faiblesses": [
+    "Trop méfiant",
+    "Difficulté à déléguer"
+  ],
+  "secret": "Il a piraté les serveurs de la NIS pour sauver un ami journaliste et conserve une copie des données compromises, qu'il garde dans un coffre à la campagne.",
+  "apparence": "Min-jun Park est un homme de 39 ans, de taille moyenne, mince, au visage anguleux et aux traits marqués. Il a les cheveux noirs, grisonnants sur les tempes, qu'il porte courts et disciplinés. Ses yeux sont sombres, perçants, toujours en mouvement, comme s'il scannait en permanence son environnement. Il porte des lunettes fines à monture métallique, qu'il ajuste machinalement quand il réfléchit. \n\nIl s'habille avec une élégance sobre : costumes sombres, chemises blanches, rarement une cravate. En mission, il troque sa veste contre un blouson léger et des baskets silencieuses. Il ne quitte jamais son ordinateur portable, un modèle ultraléger bardé de logiciels maison, et son téléphone est un modèle ancien, qu'il a modifié pour le rendre indétectable.",
+  "background": "Né à Séoul en 1985, Min-jun Park est le fils d'un ingénieur en électronique et d'une enseignante de coréen. Très tôt, il se passionne pour l'informatique et les langues. Il intègre l'Université Nationale de Séoul en informatique, puis est repéré par la NIS pour ses compétences en analyse de données. Il y passe dix ans, gravissant les échelons jusqu'à devenir chef de la division OSINT. \n\nEn 2018, il est chargé d'une opération sensible : identifier une taupe au sein du gouvernement sud-coréen. Ses investigations le mènent à un haut fonctionnaire, mais ses supérieurs lui ordonnent d'étouffer l'affaire pour éviter un scandale. Il démissionne et se met à son compte. \n\nIl travaille désormais depuis un petit bureau à Gangnam, entouré d'écrans et de serveurs, et ne dort jamais plus de cinq heures par nuit. Il est marié à une avocate, mais sa femme ignore tout de ses activités passées. Il parle couramment le japonais, le chinois, l'anglais et un peu de russe, ce qui en fait un atout précieux pour les enquêtes internationales de l'agence."
   }
 ]
